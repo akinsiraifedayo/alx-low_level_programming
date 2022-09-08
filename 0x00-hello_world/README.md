@@ -5,3 +5,4 @@
 4-puts.c file prints without using print f
 5-printf.c uses printf function to print
 6-size.c prints size of data types
+100-intel genetates assembly code in intel syntax
