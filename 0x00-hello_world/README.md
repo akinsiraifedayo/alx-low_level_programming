@@ -2,3 +2,4 @@
 1-compiler compiles a file but doesnt link
 2-assemnbler makes a c file into assembly code
 3-name compiles a file into a file cisfun
+4-puts.c file prints without using print f
