@@ -6,3 +6,4 @@
 5-printf.c uses printf function to print
 6-size.c prints size of data types
 100-intel genetates assembly code in intel syntax
+101-quote.c prints without printf or put
