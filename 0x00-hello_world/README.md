@@ -3,3 +3,4 @@
 2-assemnbler makes a c file into assembly code
 3-name compiles a file into a file cisfun
 4-puts.c file prints without using print f
+5-printf.c uses printf function to print
