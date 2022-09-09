@@ -8,13 +8,13 @@
  */
 int main(void)
 {
-	int aStart = 65;
-	int bEnd = 104;
+	char aStart = "65";
+	char bEnd = "104";
 
-	while (bEnd <= aStart)
+	while (aStart <= bEnd)
 	{
-		putchar (bEnd);
-		bEnd++;
+		putchar (aStart);
+		aStart++;
 	}
 	return (0);
 }
