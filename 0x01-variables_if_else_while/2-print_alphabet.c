@@ -8,8 +8,8 @@
  */
 int main(void)
 {
-	char aStart = 26;
-	char bEnd = 64;
+	char aStart = 97;
+	char bEnd = 112;
 
 	while (aStart <= bEnd)
 	{
