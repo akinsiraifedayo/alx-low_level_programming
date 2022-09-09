@@ -23,7 +23,7 @@ int main(void)
 	if (z > 5)
 		printf("%d and is greater than 5\n", z);
 	else if (z == 0)
-		printf("%d is 0\n", z);
+		printf("%d and is 0\n", z);
 	else if (z < 6 && z != 0)
 		printf("%d and is less than 6 and not 0\n", z);
 
