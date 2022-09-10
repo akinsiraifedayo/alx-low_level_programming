@@ -13,7 +13,7 @@ int main(void)
 
 	while (aStart <= bEnd)
 	{
-		if (aStart = 101 && aStart = 113)
+		if (aStart = 101 || aStart = 113)
 			aStart++;
 		putchar (aStart);
 		aStart++;
