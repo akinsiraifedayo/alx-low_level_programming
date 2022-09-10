@@ -13,7 +13,7 @@ int main(void)
 
 	for (myDoubles = 0; myDoubles <= 9; myDoubles++)
 	{
-		for (mySingles = myDoubles + 1; mySingles <= 9; myDoubles++)
+		for (mySingles = myDoubles + 1; mySingles <= 9; mySingles++)
 		{
 			putchar(myDoubles + '0');
 			putchar(mySingles + '0');
