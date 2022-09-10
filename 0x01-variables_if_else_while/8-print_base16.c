@@ -8,10 +8,10 @@
  */
 int main(void)
 {
-	char aStart = 0x60;
-	char bEnd = 0x71;
-	char cStart = 0x41;
-	char dEnd = 0x046;
+	char aStart = 0x30;
+	char bEnd = 0x39;
+	char cStart = 0x61;
+	char dEnd = 0x066;
 
 	while (aStart <= bEnd)
 	{
