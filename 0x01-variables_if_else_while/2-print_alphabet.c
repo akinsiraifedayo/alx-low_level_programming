@@ -2,7 +2,7 @@
 /**
  *main - Where all the code runs
  *
- *Description: This program prints A-Z
+ *Description: This program prints a-z
  *
  *Return: returns 0
  */
