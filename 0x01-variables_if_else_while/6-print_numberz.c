@@ -8,13 +8,12 @@
  */
 int main(void)
 {
-
-	for (i = 48; i < 57; i++)
+	int i;
+	for (i = 0; i < 10; i++)
 	{
 		putchar(i);
-		if (i <58)
+		if (i < 10)
 			putchar(10);
 	}
-	putchar (10);
 	return (0);
 }
