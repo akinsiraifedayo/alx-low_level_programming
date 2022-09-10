@@ -16,5 +16,6 @@ int main(void)
 		putchar (aStart);
 		aStart++;
 	}
+	putchar (0x20);
 	return (0);
 }
