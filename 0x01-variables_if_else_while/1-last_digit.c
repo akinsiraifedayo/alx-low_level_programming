@@ -5,7 +5,7 @@
 /**
  *main - where all code runs from
  *
- *Descripton: This program prints if a number is positive or negative
+ *Descripton: This program prints the last digit of a number
  *
  *
  *
