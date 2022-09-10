@@ -9,14 +9,12 @@
 int main(void)
 {
 	char i;
-	char comma = 44;
-	char space = 32;
 
 	for (i = 48; i < 57; i++)
 	{
 		putchar(i);
-		putchar(comma);
-		putchar(space);
+		putchar(44);
+		putchar(32);
 	}
 	putchar (10);
 	return (0);
