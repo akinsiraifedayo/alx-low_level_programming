@@ -10,10 +10,11 @@ int main(void)
 {
 	char i;
 	char comma = 44;
+	char space = 32;
 
 	for (i = 48; i < 57; i++)
 	{
-		putchar((i)(44)(32));
+		putchar((i)(comma)(space));
 	}
 	putchar (10);
 	return (0);
