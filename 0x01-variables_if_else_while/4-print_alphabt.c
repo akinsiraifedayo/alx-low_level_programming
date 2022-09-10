@@ -11,7 +11,7 @@ int main(void)
 	char aStart = 97;
 	char bEnd = 122;
 
-	while (aStart <= bEnd && != 101 && != 113)
+	while (aStart <= bEnd && aStart != 101 && aStart != 113)
 	{
 		putchar (aStart);
 		aStart++;
