@@ -12,9 +12,9 @@ int main(void)
 
 	for (i = 48; i <= 57; i++)
 	{
-		if (i < 9)
+		if (i < 57)
 		{
-			putchar('i');
+			putchar(i);
 			putchar(44);
 		}
 		putchar(32);
