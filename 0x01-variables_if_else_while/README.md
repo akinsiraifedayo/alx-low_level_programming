@@ -5,3 +5,5 @@
 4-print_alphabt.c print all alphabets except q and e
 4-print_alphabt.c print all alphabets except q and e ls
 5-print_numbers.c prints 0-9
+6-print_numberz.c prints numbers on a new line
+7-print_tebahpla.c prints a-z in reverse
