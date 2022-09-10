@@ -1,7 +1,6 @@
 #include <stdio.h>
 
 /**
- *
  * main - Print combinations of two digit numbers in ascending order
  *
  * Return: Always 0 (Success)
@@ -9,17 +8,17 @@
  */
 int main(void)
 {
-	int tens;
-	int ones;
+	int myDoubles;
+	int mySingles;
 
-	for (tens = 0; tens <= 9; tens++)
+	for (myDoubles = 0; myDoubles <= 9; myDoubles++)
 	{
-		for (ones = tens + 1; ones <= 9; ones++)
+		for (mySingles = myDoubles + 1; mySingles <= 9; myDoubles++)
 		{
-			putchar(tens + '0');
-			putchar(ones + '0');
+			putchar(myDoubles + '0');
+			putchar(mySingles + '0');
 
-			if (tens < 8)
+			if (myDoubles < 8)
 			{
 				putchar(',');
 				putchar(' ');
