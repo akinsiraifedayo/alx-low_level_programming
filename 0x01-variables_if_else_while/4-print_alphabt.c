@@ -13,9 +13,9 @@ int main(void)
 
 	while (aStart <= bEnd)
 	{
-		if (aStart = 101)
+		if (aStart == 101)
 			aStart++;
-		else if (aStart =113)
+		else if (aStart == 113)
 			aStart++;
 		putchar (aStart);
 		aStart++;
