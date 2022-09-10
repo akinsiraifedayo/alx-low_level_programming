@@ -2,7 +2,7 @@
 /**
  *main - Where all the code runs
  *
- *Description: This program prints A-Z
+ *Description: This program prints alphabets in reverse
  *
  *Return: returns 0
  */
