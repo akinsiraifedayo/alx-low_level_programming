@@ -2,7 +2,7 @@
 /**
  *main - Where all the code runs
  *
- *Description: This program prints A-Z
+ *Description: prints all letters except q and e
  *
  *Return: returns 0
  */
