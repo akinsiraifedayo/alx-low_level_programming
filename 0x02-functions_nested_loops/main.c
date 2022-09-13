@@ -5,10 +5,12 @@
  *Description: checks lowercase
  *
  */
-int _islower(int c)
-{
-	c = (c + '0');
 
+
+int main(void)
+{
+	int c;
+	c = 'H';
 	if (c >= 97 && c <= 112)
 		return (1);
 	else
