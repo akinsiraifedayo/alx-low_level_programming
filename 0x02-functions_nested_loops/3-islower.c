@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  *_islower - function that checks lower case
  *
@@ -17,4 +18,5 @@ int _islower(int c)
 	{
 		return (0);
 	}
+	_putchar('\n');
 }
