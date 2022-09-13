@@ -1,0 +1,7 @@
+#!/bin/bash
+#positional.sh
+
+POSPAR1="$1"
+cp b $1
+vim $1
+
