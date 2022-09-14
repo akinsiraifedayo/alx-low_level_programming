@@ -15,11 +15,10 @@ int print_sign(int n)
 		char c = '+';
 
 		return (write(1, &c, 1));
-		return (1);
 	}
 	else if (n == 0)
 	{
-		char c = '0';
+		char c = '2';
 
 		return(write(1, &c, 0));
 		return (0);
