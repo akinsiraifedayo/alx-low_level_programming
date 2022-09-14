@@ -24,4 +24,6 @@ int _isalpha(int n)
 		printf("-");
 		return(-1);
 	}
+	else
+		return;
 }
