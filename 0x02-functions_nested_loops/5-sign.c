@@ -11,7 +11,7 @@ int print_sign(int n)
 {
 	if (n > 0)
 	{
-		char c = '+'
+		char c = '+';
 		return (write(1,&c,1));
 		return (1);
 	}
