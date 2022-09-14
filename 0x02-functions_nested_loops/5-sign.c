@@ -21,7 +21,7 @@ int print_sign(int n)
 	{
 		char c = 'S';
 
-		return(write(1, &c, 0));
+		return(write(1, &c, 0, 1));
 		return (0);
 	}
 	else if (n < 0)
