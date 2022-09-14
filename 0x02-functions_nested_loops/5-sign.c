@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include <unistd.h>
 /**
  *print_sign - function that prints sign of a number
  *
