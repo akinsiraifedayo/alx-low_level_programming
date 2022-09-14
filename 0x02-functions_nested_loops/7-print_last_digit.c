@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-#include <stdlib.h>
+#include <unistd.h>
 /**
  *print_last_digit - prints last digit
  *
@@ -14,6 +14,6 @@ int print_last_digit(int c)
 	int lastDigit;
 
 	lastDigit = (c % 10);
-	return(write(1, &lastDigit, 1));
+	_putchar(lastDigit)
 	return (lastDigit);
 }
