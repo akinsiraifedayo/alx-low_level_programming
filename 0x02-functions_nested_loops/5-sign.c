@@ -19,9 +19,10 @@ int print_sign(int n)
 	}
 	else if (n == 0)
 	{
-		char c = 'S';
+		char c = '0';
 
 		return(write(1, &c, 0));
+		return (0);
 	}
 	else if (n < 0)
 	{
