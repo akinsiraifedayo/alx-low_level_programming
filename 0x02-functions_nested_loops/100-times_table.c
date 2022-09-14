@@ -1,12 +1,14 @@
 #include <stdio.h>
 /**
- *times_table - function that prints time
+ *print_times_table - function that prints time
  *
  *Description: prints time
  *@n: n times table
  */
 void print_times_table(int n)
 {
+	if (n > 15 || n < 0)
+		printf("");
 	int startVert = 0;
 	int endVert = n;
 
