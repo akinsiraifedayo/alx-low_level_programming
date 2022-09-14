@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"i
+#include "main.h"
 #include <math.h>
 /**
  *int _abs - function that checks lower case
