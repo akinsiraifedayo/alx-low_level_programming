@@ -21,7 +21,10 @@ void times_table(void)
 
 			printf("%d", mResult);
 			if (startHoriz < endHoriz)
-				printf(", ");
+				if (mResult <= 9)
+					printf(",  ");
+				else
+					printf(", ");
 			else
 				printf("\n");
 			startHoriz++;
