@@ -18,15 +18,18 @@ void times_table(void)
 		while (startHoriz <=  endHoriz)
 		{
 			int mResult = (startVert * startHoriz);
-
-			printf("%d", mResult);
+			if (startHoriz == 0)
+				printf("%d", mResult);
+			else
+			{
 			if (startHoriz < endHoriz)
 				if (mResult <= 9)
-					printf(",  ");
+					printf(",  %d" mResult);
 				else
-					printf(", ");
+					printf(", %d", mResult);
 			else
 				printf("\n");
+			}
 			startHoriz++;
 		}
 		startVert++;
