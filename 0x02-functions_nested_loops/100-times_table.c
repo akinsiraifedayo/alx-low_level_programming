@@ -8,7 +8,9 @@
 void print_times_table(int n)
 {
 	if (n > 15 || n < 0)
-		printf("");
+		printf(" ");
+	else
+	{
 	int startVert = 0;
 	int endVert = n;
 
@@ -40,5 +42,6 @@ void print_times_table(int n)
 			startHoriz++;
 		}
 		startVert++;
+	}
 	}
 }
