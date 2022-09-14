@@ -56,7 +56,7 @@ void print_times_table(int n)
 					printf(", %d", mResult);
 				else if (mResult <= 9 && startHoriz     == n)
 					printf(", %d\n", mResult);
-				else if (mResult > 9 && startHoriz =    = n)
+				else if (mResult > 9 && startHoriz == n)
 					printf(", %d\n", mResult);
 				else
 					printf(", %d", mResult);
