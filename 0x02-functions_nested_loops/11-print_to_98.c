@@ -9,7 +9,7 @@
  */
 void print_to_98(int n)
 {
-	lastNumber = 98;
+	int lastNumber = 98;
 
 	while (n < lastNumber)
 	{
