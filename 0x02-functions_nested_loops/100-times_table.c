@@ -32,13 +32,13 @@ void print_times_table(int n)
 			if (startHoriz <= endHoriz)
 			{
 				if (mResult <= 9 && startHoriz != n)
-					printf(",  %d", mResult);
+					printf(",   %d", mResult);
 				else if (mResult <= 9 && startHoriz == n)
-					printf(",  %d\n", mResult);
+					printf(",   %d\n", mResult);
 				else if (mResult > 9 && startHoriz == n)
-					printf(", %d\n", mResult);
+					printf(",  %d\n", mResult);
 				else
-					printf(", %d", mResult);
+					printf(",  %d", mResult);
 			}
 			}
 			startHoriz++;
