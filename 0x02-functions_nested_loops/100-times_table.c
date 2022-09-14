@@ -8,7 +8,7 @@
 void print_times_table(int n)
 {
 	if (n > 15 || n < 0)
-		printf(" ");
+		printf("\n");
 	else
 	{
 	int startVert = 0;
@@ -23,6 +23,8 @@ void print_times_table(int n)
 		{
 			int mResult = (startVert * startHoriz);
 
+			if (mResult < 100)
+			{
 			if (startHoriz == 0)
 				printf("%d", mResult);
 			else
@@ -40,6 +42,7 @@ void print_times_table(int n)
 			}
 			}
 			startHoriz++;
+		}
 		}
 		startVert++;
 	}
