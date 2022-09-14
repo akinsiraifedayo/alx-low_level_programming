@@ -24,16 +24,17 @@ void times_table(void)
 			else
 			{
 			if (startHoriz <= endHoriz)
-				if (mResult <= 9)
+				if (mResult <= 9 && startHoriz != 9)
 					printf(",  %d", mResult);
+				else if (mResult <= 9 && startHoriz == 9)
+					printf(",  %d\n", mResult);
+				else if (mResult > 9 && startHoriz ==9)
+					printf(", %d\n", mResult);
 				else
 					printf(", %d", mResult);
-			else
-				printf("\n");
 			}
 			startHoriz++;
 		}
 		startVert++;
 	}
-
 }
