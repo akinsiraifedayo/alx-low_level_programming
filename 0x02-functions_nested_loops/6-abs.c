@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- *int _abs - function that prints abs
+ *_abs - function that prints abs
  *
  * @c: is the input of abs
  *Description: prints abs
