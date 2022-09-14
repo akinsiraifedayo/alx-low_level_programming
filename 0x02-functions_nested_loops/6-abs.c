@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "main.h"
-#include <math.h>
 /**
  *int _abs - function that prints abs
  *
@@ -10,11 +9,12 @@
  */
 int _abs(int c)
 {
-	int preAbs;
-	int newAbs;
-
-	preAbs = (c*c);
-	newAbs = sqrt(preAbs);
-	printf ("%d", newAbs);
+	if (c >= 0)
+		printf ("%d", c);
+	else if (c < 0)
+	{
+		c = (c * -1);
+		printf ("%d", c);
+	}
 	return (0);
 }
