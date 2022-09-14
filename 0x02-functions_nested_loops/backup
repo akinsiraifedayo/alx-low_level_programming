@@ -1,15 +1,26 @@
 #include <stdio.h>
+#include "main.h"
 /**
- *_islower - function that checks lower case
+ *jack_bauer - function that prints time
  *
- *Description: checks lowercase
- *
+ *Description: prints time
  */
-int _islower(int c)
+void jack_bauer(void)
 {
+	int startHour = 0;
+	int endHour = 24;
 
-	if (c >= 97 && c <= 112)
-		return (1);
-	else
-		return (0);
+	while (startHour <= endHour)
+	{
+		int startMin = 0;
+		int endMin = 59;
+
+		while (startMin <=  endMin)
+		{
+			printf("%02d:%02d\n", startHour, startMin);
+			startMin++;
+		}
+		startHour++;
+	}
+
 }
