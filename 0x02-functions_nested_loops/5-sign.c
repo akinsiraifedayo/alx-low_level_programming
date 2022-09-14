@@ -7,7 +7,7 @@
  *Description: checks for sign
  *Return: either 1 or 0 or -1
  */
-int _isalpha(int n)
+int _print_sign(int n)
 {
 	if (n > 0)
 	{
