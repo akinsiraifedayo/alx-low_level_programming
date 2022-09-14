@@ -19,7 +19,9 @@ int print_sign(int n)
 	}
 	else if (n == 0)
 	{
-		return(write(1, 0, 1));
+		char c = '0';
+
+		return(write(1, &c, 1));
 		return (0);
 	}
 	else if (n < 0)
