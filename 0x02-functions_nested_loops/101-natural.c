@@ -20,5 +20,5 @@ int main(void)
 		printf("1005\n");
 
 	}
-
+return(0);
 }
