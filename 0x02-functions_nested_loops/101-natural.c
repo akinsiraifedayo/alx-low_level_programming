@@ -14,10 +14,10 @@ void main(void)
 	{
 		while ((a % 3 == 0 && a % 5 == 0) && (a =! 1005))
 		{
-			printf("%d ,");
+			printf("%d ," a);
 			a++;
 		}
-		printf("%d\n");
+		printf("1005\n");
 
 	}
 
