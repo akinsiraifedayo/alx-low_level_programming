@@ -1,71 +1,49 @@
-#include <stdio.h>
+#include "holberton.h"
+
 /**
- *print_times_table - function that prints time
- *
- *Description: prints time
- *@n: n times table
- */
+ * * print_times_table - Prints the n times table
+ * *
+ * * @n: number times table (0 < n <= 15)
+ * *
+ * * Return: no return
+ * */
 void print_times_table(int n)
 {
-	if (n == 0)
-		printf("0\n");
-	else if (n <= 15 && n > 0)
-	{
-	int startVert = 0;
-	int endVert = n;
+		int a;
+		int b;
+		int multResult;
 
-	while (startVert <= endVert)
-	{
-		int startHoriz = 0;
-		int endHoriz = n;
 
-		while (startHoriz <=  endHoriz)
+		if (n >= 0 && n <= 15)
 		{
-			int mResult = (startVert * startHoriz);
-
-			if (mResult < 100)
-			{
-			if (startHoriz == 0)
-				printf("%d", mResult);
-			else
-			{
-			if (startHoriz <= endHoriz)
-			{
-				if (mResult <= 9 && startHoriz != n)
-					printf(",   %d", mResult);
-				else if (mResult <= 9 && startHoriz == n)
-					printf(",   %d\n", mResult);
-				else if (mResult > 9 && startHoriz == n)
-					printf(",  %d\n", mResult);
-				else
-					printf(",  %d", mResult);
-			}
-			}
-			startHoriz++;
-			}
-
-			if (mResult >= 100)
-			{
-			if (startHoriz == 0)
-				printf("%d", mResult);
-			else
-			{
-			if (startHoriz <= endHoriz)
-			{
-				if (mResult <= 9 && startHoriz != n)
-					printf(", %d", mResult);
-				else if (mResult <= 9 && startHoriz     == n)
-					printf(", %d\n", mResult);
-				else if (mResult > 9 && startHoriz == n)
-					printf(", %d\n", mResult);
-				else
-					printf(", %d", mResult);
-			}
-			}
-			startHoriz++;
-			}
-		}
-		startVert++;
-	}
-	}
+			for (a = 0; a <= n; a++)						{
+				_putchar(48);
+												for (b = 1; b <= n; b++)
+												{
+													multResult = a * b;
+													_putchar(44);
+													_putchar(32);
+													if (multResult <= 9)
+													{
+														_putchar(32);
+														_putchar(32);
+																																	_putchar(multResult + 48);
+																																			}
+																									else if (multResult <= 99)
+																												{
+																															_putchar(32);
+																																	_putchar((multResult / 10) + 48);
+																																			_putchar((multResult % 10) + 48);
+																																					}
+																											else
+																														{
+																																	_putchar(((multResult / 100) % 10) + 48);
+																																			_putchar(((multResult / 10) % 10) + 48);
+																																					_putchar((multResult % 10) + 48);
+																																							}
+																												}
+													_putchar('\n');
+														}
+								}
 }
+
