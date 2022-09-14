@@ -3,7 +3,7 @@
  *main - naturan numbers printer
  *
  *Description: This function prints common multiples of 3 and 5
- *
+ *Return: 0
  */
 int main(void)
 {
@@ -17,7 +17,6 @@ int main(void)
 			printf("%d ,", a);
 			a++;
 		}
-		printf("1005\n");
 
 	}
 return(0);
