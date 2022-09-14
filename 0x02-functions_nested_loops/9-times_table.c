@@ -8,7 +8,7 @@
 void times_table(void)
 {
 	int startVert = 0;
-	int endVert = 9;
+	int endVert = 10;
 
 	while (startVert <= endVert)
 	{
@@ -18,6 +18,7 @@ void times_table(void)
 		while (startHoriz <=  endHoriz)
 		{
 			int mResult = (startVert * startHoriz);
+
 			if (startHoriz == 0)
 				printf("%d", mResult);
 			else
