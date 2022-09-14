@@ -2,11 +2,11 @@
 #include "main.h"
 #include <math.h>
 /**
- *int _abs - function that checks lower case
+ *int _abs - function that prints abs
  *
- * @c: is the input of function lower
- *Description: checks lowercase
- *Return: either 1 or 0
+ * @c: is the input of abs
+ *Description: prints abs
+ *Return: 0
  */
 int _abs(int c)
 {
@@ -16,4 +16,5 @@ int _abs(int c)
 	preAbs = (c*c);
 	newAbs = sqrt(preAbs);
 	printf ("%d", newAbs);
+	return (0);
 }
