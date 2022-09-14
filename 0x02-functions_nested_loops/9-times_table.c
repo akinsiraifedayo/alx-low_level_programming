@@ -8,7 +8,7 @@
 void times_table(void)
 {
 	int startVert = 0;
-	int endVert = 10;
+	int endVert = 9;
 
 	while (startVert <= endVert)
 	{
