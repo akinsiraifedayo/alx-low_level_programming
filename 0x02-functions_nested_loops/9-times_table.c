@@ -28,7 +28,7 @@ void times_table(void)
 					printf(",  %d", mResult);
 				else if (mResult <= 9 && startHoriz == 9)
 					printf(",  %d\n", mResult);
-				else if (mResult > 9 && startHoriz ==9)
+				else if (mResult > 9 && startHoriz == 9)
 					printf(", %d\n", mResult);
 				else
 					printf(", %d", mResult);
