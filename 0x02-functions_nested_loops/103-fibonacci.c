@@ -19,8 +19,8 @@ int main(void)
 		sum = (current + second);
 		second = current;
 		current = sum;
-		modCheck = sum - (sum * (sum / 2.0));
-		if ((sum < 4000000) && modCheck == 0.0)
+		modCheck = sum - (sum * (sum / 2));
+		if ((sum < 4000000) && (modCheck < 0.1))
 			myResult = (myResult + sum);
 	}
 	printf("%.0f\n", myResult);
