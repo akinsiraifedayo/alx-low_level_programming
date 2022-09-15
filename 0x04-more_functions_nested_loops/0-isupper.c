@@ -4,14 +4,16 @@
  *
  * @c: This is the character to check for
  *Description: This function checks for uppercase
- *
+ *Return: 0
  */
 int _isupper(int c)
 {
-	c = char c;
+	char d;
+	d = c;
 
-	if (c >= 65 && c <= 90)
+	if (d >= 65 && d <= 90)
 		return (1);
 	else
 		return (0);
+	return (0);
 }
