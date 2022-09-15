@@ -7,17 +7,17 @@
  */
 int main(void)
 {
-	int first = 1;
-	int second = 2;
-	int current = 3;
-	int sum;
+	double first = 1;
+	double second = 2;
+	double current = 3;
+	double sum;
 	int i = 0;
 
-	printf("%d ,%d ,%d", first, second, current);
+	printf("%0lf ,%0lf ,%0lf", first, second, current);
 	while (i < 100)
 	{
 		sum = (current + second);
-		printf(" ,%d", sum);
+		printf(" ,%0lf", sum);
 		second = current;
 		current = sum;
 		i++;
