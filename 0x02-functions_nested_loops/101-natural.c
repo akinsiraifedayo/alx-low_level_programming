@@ -9,15 +9,16 @@ int main(void)
 {
 	int z = 1024;
 	int a = 0;
+	int sum = 0;
 
-	while ( a < z)
+	while (a < z)
 	{
-		while ((a % 3 == 0 && a % 5 == 0) && (a =! 1005))
+		while (a % 3 == 0 && a % 5 == 0)
 		{
-			printf("%d ,", a);
+			sum = (sum + a);
 			a++;
 		}
 
 	}
-return(0);
+return (0);
 }
