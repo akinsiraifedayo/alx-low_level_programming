@@ -13,13 +13,12 @@ int main(void)
 
 	while (a < z)
 	{
-		while (a % 3 == 0 && a % 5 == 0)
+		if ((a % 3 == 0) && (a % 5 == 0))
 		{
 			sum = (sum + a);
-			a++;
 		}
-
+		a++;
 	}
-printf("%d", sum);
+printf("%d\n", sum);
 return (0);
 }
