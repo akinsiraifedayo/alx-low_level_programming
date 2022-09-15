@@ -13,7 +13,7 @@ int main(void)
 	int sum;
 	int i = 0;
 
-	printf("%d ,%d ,%d", first, second, current)
+	printf("%d ,%d ,%d", first, second, current);
 	while (i < 100)
 	{
 		sum = (current + second);
