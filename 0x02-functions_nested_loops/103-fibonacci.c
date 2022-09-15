@@ -20,7 +20,7 @@ int main(void)
 		second = current;
 		current = sum;
 		modCheck = sum - (sum * (sum / 2));
-		if ((sum < 4000000) && (modCheck < 0.001))
+		if ((sum < 4000000) && (modCheck == 10e-7))
 			myResult = (myResult + sum);
 	}
 	printf("%.0f\n", myResult);
