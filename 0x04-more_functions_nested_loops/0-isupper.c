@@ -9,6 +9,7 @@
 int _isupper(int c)
 {
 	char d;
+
 	d = c;
 	if (d >= 65 && c <= 90)
 	{
