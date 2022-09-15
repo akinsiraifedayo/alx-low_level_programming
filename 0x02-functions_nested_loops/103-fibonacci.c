@@ -11,7 +11,7 @@ int main(void)
 	unsigned int second = 2;
 	unsigned int current = 3;
 	unsigned int sum = 0;
-	unsigned int myResult = 6;
+	unsigned int myResult = 2;
 	unsigned int modCheck;
 
 	while (sum < 4000000)
@@ -20,7 +20,7 @@ int main(void)
 		second = current;
 		current = sum;
 		modCheck = (sum % 2);
-		if ((sum < 4000000) && (modCheck ==0))
+		if ((sum < 4000000) && (modCheck == 0))
 			myResult = (myResult + sum);
 	}
 	printf("%d\n", myResult);
