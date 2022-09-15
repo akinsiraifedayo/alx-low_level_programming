@@ -13,11 +13,11 @@ int main(void)
 	double sum;
 	int i = 0;
 
-	printf("%0lf ,%0lf ,%0lf", first, second, current);
+	printf("%0f ,%0f ,%0f", first, second, current);
 	while (i < 100)
 	{
 		sum = (current + second);
-		printf(" ,%0lf", sum);
+		printf(" ,%0f", sum);
 		second = current;
 		current = sum;
 		i++;
