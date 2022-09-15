@@ -1,30 +1,35 @@
 #include "main.h"
 
 /**
- * print_number - prints an arbitrary integer using putchar
- *
- * @n: integer to print
- *
- * Return: void
- */
+* print_number - prints # using _putchar function
+* @n: the integer to print
+*
+* Return: void
+*/
 void print_number(int n)
 {
-	unsigned int u, i;
+	int copy, nth, size = 1, ones = n % 10;
 
-	if (n < 0)
+	n /= 10;
+	copy = n;
+	if (ones < 0)
 	{
-		u = -n;
+		ones *= -1, copy *= -1, n *= -1;
 		_putchar('-');
 	}
-	else
+	if (copy > 0)
 	{
-		u = n;
+		while (copy / 10 != 0)
+		{
+			copy /= 10, size *= 10;
+		}
+		while (size > 0)
+		{
+			nth = n / size;
+			_putchar('0' + nth);
+			n -= nth * size;
+			size /= 10;
+		}
 	}
-
-	i = 1000000000;
-	do {
-		if (i <= u || i == 1)
-			_putchar(u / i % 10 + '0');
-		i /= 10;
-	} while (i != 0);
+	_putchar('0' + ones);
 }
