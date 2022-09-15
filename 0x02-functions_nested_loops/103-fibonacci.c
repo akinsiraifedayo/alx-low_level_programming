@@ -8,17 +8,18 @@
  */
 int main(void)
 {
-	double int second = 2;
+	double second = 2;
 	double current = 3;
 	double sum = 0;
 	double myResult = 6;
+	double modCheck;
 
 	while (sum < 4000000)
 	{
 		sum = (current + second);
 		second = current;
 		current = sum;
-		double modCheck = remainder(sum, 2);
+		modCheck = remainder(sum, 2);
 		if ((sum < 4000000) && modCheck < 1)
 			myResult = (myResult + sum);
 	}
