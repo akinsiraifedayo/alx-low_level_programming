@@ -5,15 +5,15 @@
 */
 void print_triangle(int size)
 {
-	int heighth, baseh, k;
+	int row, column, k;
 
 	if (size <= 0)
 		_putchar('\n');
-	for (heighth = 0; heighth < size; heighth++)
+	for (row = 0; row < size; row++)
 	{
-		for (baseh = size - heighth; baseh > 1; baseh--)
+		for (column = size - row; column > 1; column--)
 			_putchar(' ');
-		for (i = heighth + baseh; i >= 1; i--)
+		for (k = row + column; k >= 1; k--)
 			_putchar('#');
 		_putchar('\n');
 	}
