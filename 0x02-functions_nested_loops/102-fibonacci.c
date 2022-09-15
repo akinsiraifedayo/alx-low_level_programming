@@ -14,7 +14,7 @@ int main(void)
 	int i = 0;
 
 	printf("%.0f, %.0f, %.0f", first, second, current);
-	while (i < 97)
+	while (i < 47)
 	{
 		sum = (current + second);
 		printf(", %.0f", sum);
