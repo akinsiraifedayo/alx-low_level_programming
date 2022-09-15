@@ -5,13 +5,13 @@
 */
 void print_square(int size)
 {
-	int width, length;
+	int i, j;
 
 	if (size <= 0)
 		_putchar('\n');
-	for (width = 0; width < size; i++)
+	for (i = 0; i < size; i++)
 	{
-		for (length = 0; length < size; j++)
+		for (j = 0; j < size; j++)
 			_putchar('#');
 		_putchar('\n');
 	}
