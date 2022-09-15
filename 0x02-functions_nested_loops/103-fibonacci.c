@@ -12,14 +12,14 @@ int main(void)
 	double current = 3;
 	double sum = 0;
 	double myResult = 6;
-	int i = 0;
+	double modCheck = 2;
 
 	while (sum < 4000000)
 	{
 		sum = (current + second);
 		second = current;
 		current = sum;
-		if ((sum < 4000000) && (sum % 2 == 0))
+		if ((sum < 4000000) && (sum % modCheck < 1))
 			myResult = (myResult + sum);
 	}
 	printf("%.0f\n", myResult);
