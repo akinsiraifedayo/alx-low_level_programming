@@ -19,7 +19,7 @@ int main(void)
 		sum = (current + second);
 		second = current;
 		current = sum;
-		modCheck = fmod(sum, 2.0);
+		modCheck =sum - (sum *(sum / 2.0));
 		if ((sum < 4000000) && modCheck < 1)
 			myResult = (myResult + sum);
 	}
