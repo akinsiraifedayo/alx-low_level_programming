@@ -23,6 +23,6 @@ int main(void)
 		if ((sum < 4000000) && (modCheck ==0))
 			myResult = (myResult + sum);
 	}
-	printf("%.0f\n", myResult);
+	printf("%d\n", myResult);
 	return (0);
 }
