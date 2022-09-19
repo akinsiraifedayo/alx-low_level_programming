@@ -17,7 +17,7 @@ void _puts(char *str)
 		//printf("%c", str[i]);
 	}
 	j = (i / 2);
-	int i = 0;
+	i = 0;
 
 	for (i = 0; str[i] > j; i++)
 	{
