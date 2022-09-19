@@ -24,7 +24,7 @@ void rev_string(char *s)
 			printf("%c", s[i]);
 			i--;
 		}
-		return (0);
+		break;
 	}
 
 	else
