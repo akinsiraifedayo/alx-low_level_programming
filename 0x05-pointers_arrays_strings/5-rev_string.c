@@ -16,6 +16,7 @@ void rev_string(char *s)
 	{
 
 	}
+	i = i/2;
 	i--;
 	if (i != 0)
 	{
@@ -24,7 +25,6 @@ void rev_string(char *s)
 			printf("%c", s[i]);
 			i--;
 		}
-		break;
 	}
 
 	else
