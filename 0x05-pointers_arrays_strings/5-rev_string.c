@@ -19,7 +19,7 @@ void rev_string(char *s)
 	i--;
 	if (i != 0)
 	{
-		while (i >= 11)
+		while (i >= 10)
 		{
 			printf("%c", s[i]);
 			i--;
