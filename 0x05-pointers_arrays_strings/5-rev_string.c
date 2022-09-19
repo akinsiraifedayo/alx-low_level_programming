@@ -19,9 +19,9 @@ void rev_string(char *s)
 	i--;
 	if (i != 0)
 	{
-		while (i >= 10)
+		while (i >= 0)
 		{
-			printf("%c", s[i]);
+			printf("%s", s);
 			i--;
 		}
 	}
