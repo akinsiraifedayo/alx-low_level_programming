@@ -1,30 +1,32 @@
 #include "main.h"
 
 /**
- * print_number - prints an arbitrary integer using putchar
- *
- * @n: integer to print
- *
- * Return: void
+ * _atoi - Convert a string to an integer
+ * @s: The pointer to convert
+ * Return: An integer
  */
-void print_number(int n)
+
+int _atoi(char *s)
 {
-	unsigned int u, i;
+	int sign;
+	unsigned int num;
+	char *temp;
 
-	if (n < 0)
+	temp = s;
+	num = 0;
+	sign = 1;
+	while (*temp != '\0' && (*temp < '0' || *temp > '9'))
 	{
-		u = -n;
-		_putchar('-');
+		if (*temp == '-')
+			sign *= -1;
+		temp++;
 	}
-	else
+	if (*temp != '\0')
 	{
-		u = n;
+		do {
+			num = num * 10 + (*temp - '0');
+			temp++;
+		} while (*temp >= '0' && *temp <= '9');
 	}
-
-	i = 1000000000;
-	do {
-		if (i <= u || i == 1)
-			_putchar(u / i % 10 + '0');
-		i /= 10;
-	} while (i != 0);
+	return (num * sign);
 }
