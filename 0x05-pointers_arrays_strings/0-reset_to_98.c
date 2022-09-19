@@ -1,4 +1,4 @@
-#include "main.h"i
+#include "main.h"
 #include <stdio.h>
 /**
 * reset_to_98 - function that change value of a variable pointer is pointing to to 98
