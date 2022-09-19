@@ -3,7 +3,7 @@
 #include <time.h>
 
 /**
- * main - random generator for 101-crackme
+ * main - random generatoor for the 101-crackme
  *
  * Return: 0
  */
