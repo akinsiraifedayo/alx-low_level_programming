@@ -10,7 +10,7 @@ int _puts(char *str)
 {
 	char me[] = "me";
 
-	me = str;
+	me = str[];
 	printf("%s\n", me);
 	return (0);
 }
