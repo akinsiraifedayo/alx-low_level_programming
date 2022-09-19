@@ -1,4 +1,5 @@
-#include "main.h"
+#include "main.h"i
+#include <stdio.h>
 /**
 * reset_to_98 - function that change value of a variable pointer is pointing to to 98
 *
@@ -8,6 +9,6 @@ void reset_to_98(int *n)
 {
 	int *p;
 
-	p = n;
-	p = 98;
+	p = &n;
+	*p = 98;
 }
