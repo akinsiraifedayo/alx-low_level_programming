@@ -2,7 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 /**
-* puts2: prints a string
+* puts2 - prints a string
+*
 *
 * @str: takes in the string
 * Return: 0
