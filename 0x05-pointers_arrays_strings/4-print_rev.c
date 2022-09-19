@@ -15,7 +15,7 @@ void print_rev(char *s)
 	{
 
 	}
-	if i = 0
+	if (i = 0)
 	{
 		while (i >= 0)
 		{
