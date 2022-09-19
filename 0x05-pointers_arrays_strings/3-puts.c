@@ -1,13 +1,19 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 /**
-* _puts - change value of a variable pointer is pointing to to 98
+* _puts- prints a string
 *
-* @str: takes in the string input
-* Return: 0-
+* @str: takes in the string
+* Return: 0
 */
-int _puts(char *str)
+void _puts(char *str)
 {
-	printf("%s\n", str[]);
-	return (0);
+	int i = 0;
+
+	for (i = 0; str[i] != 0; i++)
+	{
+
+	}
+	printf("%s\n", str[i]);
 }
