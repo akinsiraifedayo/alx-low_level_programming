@@ -8,7 +8,7 @@
 */
 int _puts(char *str)
 {
-	char me[] = "me"
+	char me[] = "me";
 
 	me = str;
 	printf("%s\n", me);
