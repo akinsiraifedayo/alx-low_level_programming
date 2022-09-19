@@ -23,6 +23,6 @@ void print_rev(char *s)
 			i--;
 		}
 	}
-	else:
+	else
 		printf("\n");
 }
