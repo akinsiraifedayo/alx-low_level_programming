@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
-* _puts- prints a string
+* print_rev- prints a string
 *
 * @str: takes in the string
 * Return: 0
@@ -23,6 +23,7 @@ void print_rev(char *s)
 			printf("%c", s[i]);
 			i--;
 		}
+		printf("\n");
 	}
 	else
 		printf("\n");
