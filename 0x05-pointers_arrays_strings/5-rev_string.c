@@ -16,7 +16,7 @@ void rev_string(char *s)
 	{
 
 	}
-	i = i/2;
+	i = i/4;
 	i--;
 	if (i != 0)
 	{
