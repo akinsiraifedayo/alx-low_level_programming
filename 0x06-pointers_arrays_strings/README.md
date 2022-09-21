@@ -1,1 +1,1 @@
-This is an advanced pointer task
+Projects dealing with strings, arrays and pointers

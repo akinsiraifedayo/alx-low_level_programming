@@ -1,13 +1,22 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
-* *_strcat - cocantenate two strings
-*
-* @*dest: first string
-* @*src; second string
-* Description: This is a function to cocantenatre two strings
-*/
+ * _strcat - concatenates two strings
+ *
+ * @dest: destination array
+ * @src: source array
+ *
+ * Return: destination array
+ */
 char *_strcat(char *dest, char *src)
 {
-	printf("me");
+	char *ptr = dest;
+
+	while (*ptr != 0)
+		ptr++;
+	while (*src != 0)
+		*ptr++ = *src++;
+	*ptr = 0;
+
+	return (dest);
 }
