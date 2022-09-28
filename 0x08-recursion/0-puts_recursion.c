@@ -9,9 +9,9 @@
  */
 void _puts_recursion(char *s)
 {
-	char **y = &s;
-
-	/* char *z = &s */
-	/* int i = 1; */
-	printf("%x", *(*y));
+	if (*s)
+	{
+		_putchar(*s);
+		s = (s+1);
+	}
 }
