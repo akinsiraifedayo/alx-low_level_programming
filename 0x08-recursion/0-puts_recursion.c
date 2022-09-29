@@ -1,15 +1,13 @@
-#include <stdio.h>
 #include "main.h"
+
 /**
- * _puts_recursion - Function that prints a string followed by a new line
- *
- * @s: This is the string to accept
- * Description: This is a program that prints a strings
- *
+ * _puts_recursion - prints a string, followed by a new line.
+ * @s: string
+ * Return: no return.
  */
 void _puts_recursion(char *s)
 {
-	if (*s)
+	if (*s != '\0')
 	{
 		_putchar(*s);
 		_puts_recursion(s + 1);
