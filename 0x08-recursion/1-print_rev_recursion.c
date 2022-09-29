@@ -14,7 +14,7 @@ void _print_rev_recursion(char *s)
 	}
 	else
 	{
-	void _puts_recursions(char *s)
+	_puts_recursions(char *s)
 	{
 	if (*s)
 	{
