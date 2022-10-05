@@ -1,37 +1,44 @@
+/*
+ * Author: Wisdom Ai
+ * file: 2-str_concat.c
+ */
+
 #include "main.h"
 #include <stdlib.h>
-#include <string.h>
+
 /**
- * str_concat - copies an array of characters
- * @s1: The specific string to be duplicated
- * @s2: The specific string to be duplicated
- * Return: If size = 0 or malloc fails- NULL else it a pointer to the array.
+ * str_concat - Concatenates two strings.
+ * @s1: The string to be concatenated upon.
+ * @s2: The string to be concatenated to s1.
+ *
+ * Return: If concatenation fails - NULL.
+ *         Otherwise - a pointer the newly-allocated space in memory
+ *                     containing the concatenated strings.
  */
 char *str_concat(char *s1, char *s2)
 {
-	char *ptr;
-	int i, conc_len, b, c, a;
+	char *concat_str;
+	int index, concat_index = 0, len = 0;
 
-	for(i = 0; s1[i] || s2[i]; i++)
-		conc_len++;
-	ptr = malloc(conc_len);
-	if (ptr == NULL)
+	if (s1 == NULL)
+		s1 = "";
+
+	if (s2 == NULL)
+		s2 = "";
+
+	for (index = 0; s1[index] || s2[index]; index++)
+		len++;
+
+	concat_str = malloc(sizeof(char) * len);
+
+	if (concat_str == NULL)
 		return (NULL);
 
-	a = strlen(s1);
+	for (index = 0; s1[index]; index++)
+		concat_str[concat_index++] = s1[index];
 
-	for (i = 0; i < a; i++)
-	{
-		ptr[i] = s1[i];
-	}
+	for (index = 0; s2[index]; index++)
+		concat_str[concat_index++] = s2[index];
 
-	b = strlen(s2);
-
-	for (c = 0; c < b; i++)
-	{
-		ptr[i] = s2[c];
-	}
-
-
-	return (ptr);
+	return (concat_str);
 }
