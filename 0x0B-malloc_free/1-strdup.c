@@ -22,7 +22,7 @@ char *_strdup(char *str)
 
 	a = sizeof(str);
 
-	for (i = 0; i < sizeof(str); i++)
+	for (i = 0; i < a; i++)
 	{
 		ptr[i] = str[i];
 	}
