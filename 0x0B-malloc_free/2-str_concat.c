@@ -10,13 +10,11 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *ptr;
-	int i, a, b, c;
+	int i, conc_len, b, c, a;
 
-	if ((s1 == NULL) || (s2 == NULL))
-		return (NULL);
-
-	ptr = malloc(((strlen(s1) + 1) + strlen(s2)) * (sizeof(char)));
-
+	for(i = 0; s1[i] || s2[i]; i++)
+		conc_len++;
+	ptr = malloc(conc_len * sizeof(char));
 	if (ptr == NULL)
 		return (NULL);
 
