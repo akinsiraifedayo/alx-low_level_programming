@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
-
+#include <string.h>
 /**
  * _strdup - copies an array of characters
  * @str: The specific string to be duplicated
@@ -15,15 +15,12 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 
-	ptr = malloc(sizeof(str) * sizeof(char));
+	ptr = malloc(strlen(str) * sizeof(char));
 
 	if (ptr == NULL)
 		return (NULL);
 
-	for (i = 0; str[]; i++)
-	{
-		a++;
-	}
+
 
 	for (i = 0; i < a; i++)
 	{
