@@ -1,22 +1,18 @@
-#include "main.h"
 #include <stdlib.h>
 
 /**
- * malloc_checked - Creates an array of chars and
- * @b: The specific char to intialize the array with.
+ * malloc_checked - malloc memory and exit 98 on failure
  *
- * Return: ptr
+ * @b: size to allocate
+ *
+ * Return: pointer to allocated data
  */
 void *malloc_checked(unsigned int b)
 {
-	void *ptr = &b;
+	void *a;
 
-	if (ptr == 0)
+	a = malloc(b);
+	if (!a)
 		exit(98);
-
-	ptr = malloc(b);
-
-	if (ptr == NULL)
-		exit(98);
-	return (ptr);
+	return (a);
 }
