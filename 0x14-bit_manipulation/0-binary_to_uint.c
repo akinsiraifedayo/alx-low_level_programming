@@ -1,19 +1,31 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include "main.h"
 
-/*
- * AUth: Ifedayo Akinsira
- * Desc: Header file containing prototypes for all functions
- *       written in the 0x13-bit_manipulation directory.
- */
+/**
+* binary_to_uint - converts a binary number to an
+* unsigned int.
+* @b: binary.
+* Return: unsigned int.
+*/
+unsigned int binary_to_uint(const char *b)
+{
+	unsigned int ui;
+	int len, base_two;
 
-int _putchar(char c);
-unsigned int binary_to_uint(const char *b);
-void print_binary(unsigned long int n);
-int get_bit(unsigned long int n, unsigned int index);
-int set_bit(unsigned long int *n, unsigned int index);
-int clear_bit(unsigned long int *n, unsigned int index);
-unsigned int flip_bits(unsigned long int n, unsigned long int m);
-int get_endianness(void);
-
-#endif /* MAIN_H */
+	if (!b)
+		return (0);
+	ui = 0;
+	for (len = 0; b[len] != '\0'; len++)
+		;
+	for (len--, base_two = 1; len >= 0; len--, base_two *= 2)
+	{
+		if (b[len] != '0' && b[len] != '1')
+		{
+			return (0);
+		}
+		if (b[len] & 1)
+		{
+			ui += base_two;
+		}
+	}
+	return (ui);
+}
